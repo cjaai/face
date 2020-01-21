@@ -14,7 +14,7 @@ jpg files
 2002 
 jpg files
 
-#STEP2
+##STEP2
 Run annotation_fddb_darknet.py to get the following
 D:\face\FDDB\FDDB-folds\annotations_darknet 
 1.jpg
