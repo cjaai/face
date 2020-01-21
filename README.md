@@ -3,9 +3,7 @@ Face Detection
 #STEP1
 Download FDDB Dataset http://vis-www.cs.umass.edu/fddb/index.html
 Download to D:\face\FDDB
-
 Folder structure:
-------------------------------------
 FDDB-folds
     FDDB-fold-01.txt
     FDDB-fold-01-ellipseList.txt
@@ -15,7 +13,6 @@ FDDB-folds
 jpg files
 2002 
 jpg files
-------------------------------------
 
 #STEP2
 Run annotation_fddb_darknet.py to get the following
