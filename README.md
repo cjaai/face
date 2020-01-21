@@ -1,10 +1,9 @@
 "# face" 
 Face Detection
-STEP1
-Download FDDB　 Dataset
-FDDB　 Dataset (Face Detection Data Set and Benchmark)　 
-Dataset link： http://vis-www.cs.umass.edu/fddb/index.html
+#STEP1
+Download FDDB Dataset http://vis-www.cs.umass.edu/fddb/index.html
 Download to D:\face\FDDB
+
 Folder structure:
 ------------------------------------
 FDDB-folds
@@ -18,7 +17,7 @@ jpg files
 jpg files
 ------------------------------------
 
-STEP2
+#STEP2
 Run annotation_fddb_darknet.py to get the following
 D:\face\FDDB\FDDB-folds\annotations_darknet 
 1.jpg
@@ -26,22 +25,22 @@ D:\face\FDDB\FDDB-folds\annotations_darknet
 2.jpg
 2.txt
 
-STEP3
+#STEP3
 Copy all .jpg .txt files to D:\darknet\build\darknet\x64\faceData\JPEGImages
 
-STEP4
+#STEP4
 All config data is saved in the following folder:
 D:\darknet\build\darknet\x64\faceData
 
-STEP5
+#STEP5
 Training 
 darknet detector train faceData/face.data faceData/yolov3-face.cfg darknet53.conv.74
 
-Test a picture
+##Test a picture
 darknet detector test faceData/face.data faceData/yolov3-face.cfg faceData/backup/yolov3-face_last.weights -thresh 0.65 faceData/JPEGImages/2.jpg
 
-test list
+##test list
 darknet detector test faceData/face.data faceData/yolov3-face.cfg faceData/backup/yolov3-face_last.weights -thresh 0.65 < D:\darknet\build\darknet\x64\faceData\test.txt -i 0  > D:\darknet\build\darknet\x64\faceData\result.txt
 
-test video
+##test video
 darknet detector demo faceData/face.data faceData/yolov3-face.cfg faceData/backup/yolov3-face_last.weights -thresh 0.65 faceData/JPEGImages/1.mp4 > D:\darknet\build\darknet\x64\faceData\result.txt
