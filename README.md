@@ -5,14 +5,14 @@ Download FDDB Dataset http://vis-www.cs.umass.edu/fddb/index.html <br/>
 Download to D:\face\FDDB <br/>
 Folder structure: <br/>
 FDDB-folds <br/>
-    FDDB-fold-01.txt <br/>
+    (FDDB-fold-01.txt <br/>
     FDDB-fold-01-ellipseList.txt <br/>
     FDDB-fold-02.txt <br/>
-    FDDB-fold-02-ellipseList.txt <br/>
+    FDDB-fold-02-ellipseList.txt) <br/>
 2003  <br/>
-jpg files <br/>
+(jpg files) <br/>
 2002 <br/>
-jpg files <br/>
+(jpg files) <br/>
 
 # STEP2
 Run annotation_fddb_darknet.py to get the following <br/>
