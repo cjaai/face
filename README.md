@@ -40,4 +40,6 @@ darknet detector test faceData/face.data faceData/yolov3-face.cfg faceData/backu
 darknet detector test faceData/face.data faceData/yolov3-face.cfg faceData/backup/yolov3-face_last.weights -thresh 0.65 < D:\darknet\build\darknet\x64\faceData\test.txt -i 0  > D:\darknet\build\darknet\x64\faceData\result.txt
 
 ## test video
+```
 darknet detector demo faceData/face.data faceData/yolov3-face.cfg faceData/backup/yolov3-face_last.weights -thresh 0.65 faceData/JPEGImages/1.mp4 > D:\darknet\build\darknet\x64\faceData\result.txt
+```
